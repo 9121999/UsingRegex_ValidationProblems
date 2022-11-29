@@ -26,5 +26,12 @@ namespace UserRegistration_UsingRegex
             else
                 Console.WriteLine("Pin Code Regex Failed");
         }
+        public void TestPinCode3(string input)
+        {
+            if (Regex.IsMatch(input, PIN_CODE_PATTERN))
+                Console.WriteLine("Pin Code Matches");
+            else
+                Console.WriteLine("Pin Code Regex Failed");
+        }
     }
 }
