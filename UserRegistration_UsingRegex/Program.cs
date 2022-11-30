@@ -9,7 +9,7 @@ namespace UserRegistration_UsingRegex
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine(" 1.PinCodeValidation \n 2.CheckPinCodeWithSpecialChar \n 3. ChechAlphabateAtEnd \n 4.CheckWithSpace");
+                Console.WriteLine(" 1.PinCodeValidation \n 2.CheckPinCodeWithSpecialChar \n 3. ChechAlphabateAtEnd \n 4.CheckWithSpace \n 5. CheckEmailCondition");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -36,6 +36,10 @@ namespace UserRegistration_UsingRegex
                         Console.WriteLine("Enter Pincode");
                         string opt4 = Convert.ToString(Console.ReadLine());
                         code4.TestPinCode4(opt4);
+                        break;
+                    case 5:
+                        CheckEmail checkEmail = new CheckEmail();
+                        checkEmail.ValidateEmailFirstCond("@xyz");
                         break;
 
                     default:
