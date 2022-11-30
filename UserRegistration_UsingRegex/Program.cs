@@ -9,7 +9,7 @@ namespace UserRegistration_UsingRegex
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine(" 1.PinCodeValidation \n 2.CheckPinCodeWithSpecialChar \n 3. ChechAlphabateAtEnd \n 4.CheckWithSpace \n 5. CheckEmailCondition \n 6.CheckEmailSecondCondition");
+                Console.WriteLine(" 1.PinCodeValidation \n 2.CheckPinCodeWithSpecialChar \n 3. ChechAlphabateAtEnd \n 4.CheckWithSpace \n 5. CheckEmailCondition \n 6.CheckEmailSecondCondition \n 7. CheckEmailThirdCondition");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -43,7 +43,11 @@ namespace UserRegistration_UsingRegex
                         break;
                     case 6:
                         CheckEmail checkEmail1 = new CheckEmail();
-                        checkEmail1.ValidateEmailSecondPart("xyz@bridgelabz");
+                        checkEmail1.ValidateEmailSecondCond("xyz@bridgelabz");
+                        break;
+                    case 7:
+                        CheckEmail checkEmail2 = new CheckEmail();
+                        checkEmail2.ValidateEmailThirdCond("xyz@bridgelabz.com");
                         break;
 
                     default:
